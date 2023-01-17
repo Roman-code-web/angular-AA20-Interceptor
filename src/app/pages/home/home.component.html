@@ -1,11 +1,28 @@
 <div class="container py-5">
     <div class="container">
-        <h1>{{nombreApp}}</h1>
+        <h1 class="text-center">{{nombreApp}}</h1>
     </div>
     <div class="container py-5">
         <button class="btn btn-primary" (click)="getlistarUser()" >Ver usuarios</button>
     </div>
-    <ul *ngFor="let user of listaUser">
-        <li>{{user.name}}</li>
-    </ul>
+    <div class="container ">
+        <table class="table ">
+            <thead class="text-center bg-primary bg-opacity-50">
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">UserName</th>
+                <th scope="col">Telephone</th>
+              </tr>
+            </thead>
+            <tbody class="text-center">
+              <tr *ngFor="let user of listaUser">
+                <td>{{user.id}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.username}}</td>
+                <td>{{user.phone}}</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
 </div>

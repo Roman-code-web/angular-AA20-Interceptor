@@ -18,7 +18,7 @@ export class InterceptorServiceService implements HttpInterceptor {
       //3. Variable que almacena el nuevo requerimiento
       const nuevoReq=req.clone(
         {
-          setHeaders:{Authorization:'MONCHITO'}
+          setHeaders:{Authorization:'codigo 2023'}
         })
     return next.handle(nuevoReq);
   }
