@@ -1,1 +1,8 @@
-<p>home works!</p>
+<div class="container py-5">
+    <div class="container">
+        <h1>{{nombreApp}}</h1>
+    </div>
+    <ul *ngFor="let user of listaUser">
+        <li>{{user.name}}</li>
+    </ul>
+</div>
