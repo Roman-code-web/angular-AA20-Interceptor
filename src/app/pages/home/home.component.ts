@@ -15,7 +15,6 @@ export class HomeComponent implements OnInit {
 
   //4.
   ngOnInit(): void {
-    this.getlistarUser();
     this.nombreApp= this.userdataservice.nombreAPP;
   }
 

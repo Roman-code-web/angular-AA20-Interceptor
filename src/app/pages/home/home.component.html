@@ -2,6 +2,9 @@
     <div class="container">
         <h1>{{nombreApp}}</h1>
     </div>
+    <div class="container py-5">
+        <button class="btn btn-primary" (click)="getlistarUser()" >Ver usuarios</button>
+    </div>
     <ul *ngFor="let user of listaUser">
         <li>{{user.name}}</li>
     </ul>
